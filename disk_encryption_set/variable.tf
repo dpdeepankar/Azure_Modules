@@ -6,6 +6,7 @@ variable "disk_encryption_set" {
     identity_type       = optional(string)
     key_vault           = string
     key_vault_key       = string
+    user_assigned_identity = string
   }))
 }
 
