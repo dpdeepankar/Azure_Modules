@@ -4,9 +4,8 @@ variable "disk_encryption_set" {
     resource_group_name = string
     location            = string
     identity_type       = optional(string)
-    key_vault           = string
-    key_vault_key       = string
-    user_assigned_identity = string
+    key_vault_key_id       = string
+    user_assigned_identity_id = string
   }))
 }
 

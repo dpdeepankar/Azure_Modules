@@ -6,7 +6,7 @@ resource "random_pet" "this" {
   length = 6
 }
 
-resource "azurerm_key_vault" "kv" {
+resource "azurerm_key_vault" "this" {
   for_each = var.keyvault
 
   name = "${random_pet.this.id}-${each.value.name}-kv"  
